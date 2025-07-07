@@ -1,1 +1,14 @@
-sadjhwlehalkhjaksdlasdlkasldklkncln
+만약 집에서 혼자 연습한걸 깃허브에 별도로 올리고 싶으면
+git init : 가장 처음한번만
+
+init이 끝난 후 부터 git이 감지를 하기 시작함 폴더생성
+처음 저장소 만들면 github에 있으니까 복붙or직접입력
+git remote add origin 깃허브저장소주소
+
+(계속 반복하면됨 사용할때마다)
+특정 작업이 완료된 후 
+git add .
+git commit -m'커밋 메시지'
+
+작업 내용을 깃허브에 올릴때
+git push origin main
