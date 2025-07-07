@@ -20,10 +20,31 @@ a:hover {
   color: white;
 }
 
-.id {
-  float: left;
+.login div {
+  display: inline-block;
 }
 
-.id input::selection {
+input:focus {
+  background-color: #3da8c9;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+.box1 {
   background-color: red;
+}
+.box2 {
+  background-color: blue;
+  transition: 0.5s linear;
+}
+.box3 {
+  background-color: green;
+}
+
+.box2:hover {
+  transform: scale(2);
+  transition: 0.5s linear;
 }
