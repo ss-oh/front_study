@@ -1,0 +1,22 @@
+table {
+  width: 400px;
+  border: 1px solid red;
+  /* table셀의 테두리(border)를 서로합칠지 분리할지를 지정한다 */
+  /*  border-collapse: collapse; */
+
+  /* 테이블의 너비를 고정시킨다 - 단,table의너비값이 있어야 한다 */
+  table-layout: fixed;
+  /* 캡션위치 */
+  caption-side: bottom;
+  /* 빈칸없애기 */
+  empty-cells: hide;
+}
+td {
+  border: 1px solid blue;
+}
+
+img {
+  width: 50px;
+
+  vertical-align: middle;
+}

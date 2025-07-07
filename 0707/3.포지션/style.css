@@ -1,0 +1,24 @@
+img {
+  width: 50%;
+  height: 50%;
+}
+.rel {
+  position: relative;
+  right: 100px;
+  bottom: 50px;
+}
+
+div {
+  border: 1px solid red;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  margin: 100px;
+}
+
+.abs {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: translate(50%, 50%);
+}

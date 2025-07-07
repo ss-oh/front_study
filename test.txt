@@ -1,4 +1,4 @@
-만약 집에서 혼자 연습한걸 깃허브에 별도로 올리고 싶으면
+만약 집에서 혼자 연습한걸 깃허브에 별도로 올리고 싶으면----------
 git init : 가장 처음한번만
 
 init이 끝난 후 부터 git이 감지를 하기 시작함 폴더생성
@@ -6,9 +6,28 @@ init이 끝난 후 부터 git이 감지를 하기 시작함 폴더생성
 git remote add origin 깃허브저장소주소
 
 (계속 반복하면됨 사용할때마다)
-특정 작업이 완료된 후 
+특정 작업이 완료된 후 ------------
 git add .
 git commit -m'커밋 메시지'
 
-작업 내용을 깃허브에 올릴때
+작업 내용을 깃허브에 올릴때---------
 git push origin main
+
+집에서 내려받을때-----
+
+저장할 폴더 안에서 우클릭 gitbash후 git clone 저장소 주소 . <- 폴더안에 복사본생성
+
+다시 깃허브에 올리기 위해 git add . / git commit -m '메세지'
+
+git push origin main 깃허브 업로드
+
+*충돌이 생길 수 있음 - 동일한 파일이 깃허브와 내 컴퓨터에 있는 부분이 겹쳐서*
+
+학원에서 집갈때 push, 집에서 코드 건들기 전에 pull, 집에서 할거 끝나면 add,commit,push, 학원와서 뭐 하기전에 pull
+
+만약 pull하면서 충돌나면 해결해주고 add,commit만 해주면 상관없다
+
+만약 집에서 해결못할 것 같으면 새폴더에다 clone
+
+black sheep wall
+operation cwal

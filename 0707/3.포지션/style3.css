@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  height: 3000px;
+}
+
+header {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.home {
+  width: 50px;
+  height: 50px;
+}
+
+ul,
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+header {
+  background-color: cornflowerblue;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  display: flex;
+  top: 0;
+  justify-content: space-between;
+  line-height: 50px;
+  padding: 0 50px;
+}
+
+.home {
+  width: 100px;
+  text-align: center;
+}
+
+nav {
+  width: 80%;
+  padding-right: 100px;
+}
+
+ul {
+  width: 230px;
+  float: right;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  width: 40px;
+}
+
+.home:hover {
+  box-shadow: 0px -15px 5px -11px #042a72 inset;
+  color: #042a72;
+  transition: all 1s;
+}
+
+li:hover {
+  /* border-bottom: 2px solid rgb(4, 42, 114); */
+  box-shadow: 0px -15px 5px -11px #042a72 inset;
+  color: #042a72;
+  transition: all 1s;
+}
+li:hover a {
+  color: #042a72;
+  font-weight: bold;
+}
+
+.text {
+  margin: 50px;
+  line-height: 37px;
+  padding-top: 50px;
+}
+.text h1 {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(236, 236, 236);
+  position: fixed;
+  border: 1px solid lightgray;
+  font-size: 20px;
+  bottom: 15px;
+  right: 15px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgb(211, 211, 211);
+  box-shadow: 1px 1px 5px 1px rgb(129, 129, 129);
+}
