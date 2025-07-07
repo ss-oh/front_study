@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 1920px;
+  height: 1080px;
+}
+
+section{
+  background-image: url(../images/kakaofriends.gif);
+  background-size: auto;
+  height: 100%;
+  width: 100;
+}

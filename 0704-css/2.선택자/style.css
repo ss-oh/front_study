@@ -1,0 +1,23 @@
+
+* {
+  color: red;
+}
+
+h1 {
+  background-color: aqua;
+} 
+
+/* 아이디 선택자 */
+
+#title {
+  text-align: center;
+  background-color: yellow;
+}
+
+/* 클래스 선택자 */
+.color  {
+  color: blue;
+  text-align: center;
+  background-color: green;
+  
+}

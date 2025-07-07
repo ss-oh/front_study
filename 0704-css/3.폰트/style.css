@@ -1,0 +1,43 @@
+p {
+  font-size: 46px;
+
+
+
+/* 100 : lighter 
+   400 : nomarl
+   700 : bold
+   900 : bolder
+*/
+
+  font-weight: 900;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-variant: small-caps;
+  color: darkgray;
+  
+  text-shadow: 4px 4px 3px rgba(170, 170, 170, 0.5);
+
+  font: font-style font-variant font-weight font-size/line-height font-family;
+}
+body p:first-child {
+  color: black;
+  text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
+  font-size: 56px;
+  letter-spacing: 0px;
+  word-spacing: 50px;
+  text-align: center;
+  margin-left: -80px;
+
+}
+
+h5 {
+  color: rgb(223, 47, 47);
+  text-decoration: underline;
+  font-size: 30px;
+  line-height: 0.9;
+}
+

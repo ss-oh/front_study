@@ -1,0 +1,45 @@
+img{
+  width: 100%;
+  height: auto;
+  
+}
+
+.container {
+  border: 1px solid red;
+  height: 300px;
+  overflow: scroll;
+  padding: 10px;
+}
+
+.container img{
+  width: 300px;
+  float: left;
+}
+
+
+
+.float {
+  float: left;
+}
+
+.clear{
+  clear: both;
+}
+.box{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.box1 {
+  background-color: rgb(255, 114, 161);
+} 
+.box2 {
+  background-color: rgb(255, 139, 178);
+}
+.box3 {
+  background-color: rgb(255, 167, 196);
+  float: right;
+}
+.box4 {
+  background-color: rgb(255, 194, 213);
+}
