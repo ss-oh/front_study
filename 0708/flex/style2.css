@@ -1,0 +1,72 @@
+div {
+  text-align: center;
+  line-height: 100px;
+}
+
+.parent {
+  border: 1px solid red;
+  display: flex;
+}
+
+.parent div {
+  height: 100px;
+  background-color: skyblue;
+  margin: 5px;
+}
+
+.child1 {
+  /* flex-grow: 1; */
+  flex-shrink: 3;
+}
+.child2 {
+  /* flex-grow: 20; */
+  flex-shrink: 2;
+}
+.child3 {
+  /* flex-grow: 1; */
+  flex-shrink: 1;
+}
+
+.parent2 {
+  border: 1px solid red;
+  height: 500px;
+  display: flex;
+}
+
+.parent2 div {
+  height: 100px;
+  width: 100px;
+  background-color: pink;
+  margin: 5px;
+}
+/* order는 순서 변경 0부터 시작함 */
+.child4 {
+  flex: 1;
+  /* order: 1; */
+  align-self: center;
+}
+.child6 {
+  flex: 1;
+  /* order: 2; */
+}
+.child5 {
+  flex: 1;
+  /* order: 0; */
+}
+.parent3 {
+  border: 1px solid red;
+  height: 500px;
+  display: flex;
+}
+.parent3 div {
+  height: 100px;
+  width: 100px;
+  background-color: yellowgreen;
+}
+
+.child7 {
+  margin-right: auto;
+}
+.child8 {
+  margin-right: auto;
+}

@@ -44,7 +44,11 @@ input:focus {
   background-color: green;
 }
 
+.box4 {
+  background-color: cornflowerblue;
+}
+
 .box2:hover {
-  transform: scale(2);
+  transform: scale(1.5);
   transition: 0.5s linear;
 }

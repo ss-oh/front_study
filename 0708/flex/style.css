@@ -1,0 +1,64 @@
+.parent {
+  border: 1px solid red;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* flex 박스에 자식으로 있는 요소는 높이를 설정하지 않으면 부모크기에 맞춰짐 */
+
+div {
+  text-align: center;
+  line-height: 100px;
+}
+
+.child {
+  background-color: pink;
+  width: 100px;
+  height: 100px;
+}
+
+.parent2 {
+  border: 1px solid red;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child2 {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+}
+
+.parent3 {
+  border: 1px solid red;
+  height: 500px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.child3 {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+}
+
+.parent4 {
+  border: 1px solid red;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  /* 배치방향과 줄바꿈은 하나의 속성으로 가능함 */
+  align-content: flex-start;
+}
+
+.parent4 div {
+  width: 100px;
+  height: 100px;
+  background-color: yellowgreen;
+  margin: 5px;
+}

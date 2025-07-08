@@ -1,0 +1,38 @@
+[href] {
+  color: red;
+}
+
+h1[class] {
+  background-color: pink;
+}
+
+[class="green"] {
+  background-color: yellow;
+}
+
+/* 공백으로 구분해서 해당 단어가 있는 속성
+[title~="태그"] {
+  color: red;
+} */
+
+[title|="태그"] {
+  color: red;
+}
+
+/* ^= 해당 단어로 시작하는 */
+
+[title^="태그"] {
+  color: red;
+}
+
+/* $= 해당 단어로 끝나는 */
+
+[title$="태그"] {
+  color: blue;
+}
+
+/* *= 해당 단어를 포함하는 */
+
+[title*="태그"] {
+  font-style: italic;
+}

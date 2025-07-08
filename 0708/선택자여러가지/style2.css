@@ -1,0 +1,52 @@
+h1::before {
+  content: "★";
+  color: yellow;
+}
+
+h1::after {
+  content: "new";
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.img {
+  width: 500px;
+  height: 500px;
+  background-image: url(../../image/apeach.jpeg);
+  background-size: contain;
+  position: relative;
+}
+
+.img::before {
+  content: "이미지글씨";
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  line-height: 500px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.content {
+  background-color: brown;
+  width: calc(100% - 200px);
+}
+
+.aside {
+  background-color: darkolivegreen;
+  width: 200px;
+}
+
+.container div {
+  float: left;
+  height: 50px;
+}
+
+.wrapper b {
+  font-size: 40px;
+  vertical-align: middle;
+}
