@@ -1,0 +1,110 @@
+/* 
+  @media : 미디어 쿼리를 사용
+  screen : 미디어 타입 - 화면
+  and : 조건들을 연결해주는 논리연산자
+  max-width : 조건.. 아래코드는 최대 너비가 500px일때까지만 적용하는 코드
+*/
+
+/* 
+  Viewport
+  중단점 breakPoint
+  모바일: 0 ~ 767px
+  테블릿: 768 ~ 1923px
+  pc: 1024 ~ 1439px
+  큰 pc : 1440~
+*/
+
+/* @media screen and (max-width: 500px) {
+   해당 조건에 만족할 경우 적용할 css 코드 
+}  
+*/
+
+/* 단위 정리 
+  px : 고정값 - 유연성이 떨어짐(반응형에서도 고정되어서)
+
+  % : 상대적 단위 / 기준 : 부모 요소가 기준이 됨 / 부모의 너비, 높이, 폰트 사이즈 이런 것들에 비례함 / 중첩되서 사용하다보면 복잡함
+
+  em : 상대적 단위 - 해당 요소의 글자크기가 기준이 됨 / 박스단위로 글자크기, 사이즈 비례 조절 할 때 
+
+  rem : 상대적 단위 - html의 최상위 요소의 글자 크기 (즉, html태그의 폰트사이즈)가 기준이 됨 / 전체 일관된 기준으로 조절 할 때
+
+  vh : 뷰포트의 높이 -> 사용자가 보고있는 화면의 높이 = 100vh /
+
+  vw : 뷰포트의 너비 -> 사용자가 보고있는 화면의 너비 = 100vw /
+
+
+
+
+
+
+
+
+
+
+
+*/
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: pink;
+  height: 2000px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container div {
+  background-color: skyblue;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  transition: 1s ease-in-out;
+}
+
+.header1 {
+  background-color: yellowgreen;
+  height: 100px;
+}
+.header2 {
+  height: 100px;
+  background-color: skyblue;
+}
+
+@media (max-width: 425px) {
+  .container {
+    flex-direction: column;
+  }
+  .container div {
+    width: 90%;
+    height: 150px;
+    transition: 1s ease-in-out;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .container {
+    align-content: flex-start;
+  }
+  .container div {
+    width: 45%;
+    height: 150px;
+    transition: 1s ease-in-out;
+  }
+}
+@media (max-width: 768px) {
+  .header1 {
+    display: none;
+  }
+  .header2 {
+    display: block;
+  }
+}
+@media (min-width: 769px) {
+  .header1 {
+    display: block;
+  }
+  .header2 {
+    display: none;
+  }
+}

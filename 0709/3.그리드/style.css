@@ -1,0 +1,41 @@
+/* 그리드 용어 */
+/* 
+grid-container : 그리드 박스
+grid-item : 컨테이너의 자식
+grid-line: 경계선 (번호는 1번부터)
+grid-gap : 아이템사이 간격
+
+*/
+
+.container {
+  display: grid;
+  /* 고정 길이 */
+  /* grid-template-columns: 200px 200px 200px; */
+  /* 가변 길이 */
+  /* grid-template-columns: 1fr 2fr 1fr; */
+  /* 가변길이와 고정길이의 조합도 가능함 1fr 1px 2fr */
+  /* grid-template-columns: repeat(3, 1fr); */
+
+  /* 한칸의 너비는 200px로 할건데 한줄에 몇개넣을지는 안정함 */
+  /* auto-fill, auto-fit사용 */
+
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+
+  /* 높이 */
+  /* grid-template-rows: 100px 100px; */
+  /* 행열 사이의 공간 */
+  gap: 10px;
+  /* grid-auto-rows: minmax(100px, 300px); */
+}
+
+.container div {
+  background-color: skyblue;
+  border: 1px solid red;
+}
+
+.container div:nth-child(1) {
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+  grid-column: 1 / 3;
+  grid-row: 1 / 4;
+}
