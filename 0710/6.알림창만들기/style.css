@@ -1,0 +1,10 @@
+.alret-box {
+  padding: 20px;
+  border-radius: 15px;
+  background-color: goldenrod;
+  display: none;
+}
+.alert {
+  background-color: skyblue;
+  height: 100px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="alret-box" id="ab">알림창</div>
+    <button id="aa" onclick="toggleBtn('none')">알림창보기</button>
+    <button id="aa" onclick="toggleBtn('block')">x</button>
+
+    <div class="alert"></div>
+
+    <button onclick="changetxt('aaa')">알림창1</button>
+    <button onclick="changetxt('bbb')">알림창2</button>
+    <button onclick="changetxt('ccc')">알림창3</button>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

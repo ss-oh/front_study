@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="box">div태그</div>
+
+    <ul>
+      <li>li태그</li>
+      <li>li태그2</li>
+    </ul>
+
+    <div class="bg">다른div</div>
+    <div class="bg">div태그끝</div>
+
+    <script>
+      for (let i = 0; i < document.body.childNodes.length; i++) {
+        console.log(document.body.childNodes[i]);
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
