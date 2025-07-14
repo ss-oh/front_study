@@ -1,0 +1,29 @@
+* {
+  list-style: none;
+}
+
+.list {
+  display: flex;
+  color: lightgray;
+  width: 200px;
+  border: 1px solid black;
+}
+
+li {
+  width: 50px;
+  border: 1px solid lightgray;
+  text-align: center;
+  padding: 5px 0px;
+}
+
+.tab-content {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.selected {
+  color: black;
+  font-weight: 700;
+}
