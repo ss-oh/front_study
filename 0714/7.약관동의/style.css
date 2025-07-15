@@ -1,3 +1,7 @@
+body {
+  height: 3000px;
+}
+
 .box {
   border: 1px solid black;
   width: 200px;
@@ -10,4 +14,12 @@
 }
 #chk:disabled + label {
   color: lightgray;
+}
+
+.status-bar {
+  width: 0;
+  height: 5px;
+  background-color: red;
+  position: fixed;
+  top: 0;
 }
